@@ -1,3 +1,5 @@
+package lib
+
 // 一些辅助函数
 
 def isNumeric(ch: Char) = ch >= '0' && ch <= '9'
