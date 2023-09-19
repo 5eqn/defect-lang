@@ -1,8 +1,20 @@
-## sbt project compiled with Scala 3
+## Defect Lang
+
+Example:
+
+```
+let fib = (x) =>
+  if x == 1 then 1 else
+  if x == 2 then 1 else
+    add(app(fib, add(x, -1)), app(fib, add(x, -2))) in
+
+app(fib, 8)
+```
+
+yields `21`.
 
 ### Usage
 
-This is a normal sbt project. You can compile code with `sbt compile`, run it with `sbt run`, and `sbt console` will start a Scala 3 REPL.
+[Main.scala](src/main/scala/Main.scala) has a main function `run` that reads file from file system.
 
-For more information on the sbt-dotty plugin, see the
-[scala3-example-project](https://github.com/scala/scala3-example-project/blob/main/README.md).
+[Lib.scala](src/main/scala/Lib.scala) has a library function `run` that interprets a given string.

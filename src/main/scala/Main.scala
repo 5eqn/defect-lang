@@ -1,4 +1,3 @@
-package main
 import scala.io.Source
 
 // 一些辅助函数
